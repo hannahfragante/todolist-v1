@@ -108,6 +108,12 @@ form input, form button{
     box-shadow: 4px 4px 8px 0px #FFF, 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset, -4px -4px 12px 0px rgba(221, 99, 55, 0.29);
 }
 
+.filter-btn-clicked{
+    color: white;
+    background: linear-gradient(89deg, #EA0038 0%, #FFEC40 100%);
+    box-shadow: 4px 4px 8px 0px #FFF, 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset, -4px -4px 12px 0px rgba(221, 99, 55, 0.29);
+}
+
 .todo-container{
     display: flex;
     justify-content: center;
