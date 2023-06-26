@@ -22,17 +22,22 @@
         <h1>hannah's todo list</h1>
     </header>
 
-    <form>
-        <input type="text" class="todo-input">
-        <button class="todo-btn" type="submit">
-            <i class="fa-solid fa-plus"></i>
-        </button>
-    </form>
+    <div class="input-container">
+        <form>
+            <input type="text" class="todo-input">
+            <button class="todo-btn" type="submit">
+                <i class="fa-solid fa-plus"></i>
+            </button>
+        </form>
+    </div>
     
-    <div class="filters">
-        <button class="all-btn">all</button>
-        <button class="finished-btn">finished</button>
-        <button class="unfinished-btn">unfinished</button>
+    <div class="filters-container">
+        <div class="filters">
+            <button class="filter-btn filter-btn-style all-btn">all</button>
+            <button class="filter-btn filter-btn-style finished-btn">finished</button>
+            <button class="filter-btn filter-btn-style unfinished-btn">unfinished</button>
+            <div class="filter-btn"></div>
+        </div>
     </div>
 
     <div class="todo-container">
@@ -46,7 +51,7 @@
                     <i class="fa-solid fa-trash"></i>
                 </button>
             </div>
-            <div class="todo">
+            <div class="todo completed">
                 <li class="todo-item">get boba</li>
                 <button class="complete-btn">
                     <i class="fa-regular fa-circle-check"></i>

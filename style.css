@@ -9,3 +9,214 @@ body{
     font-family: "Cabin", sans-serif;
     min-height: 100vh;
 }
+
+header{
+    font-size: 1.5rem;
+    color:#3A3A3A;
+}
+
+header{
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    width: 35vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+form input, form button{
+    padding: 0.8rem;
+    font-size:1.2rem;
+    border:none;
+    background: white;
+    border-radius: 15px;
+    color:#3A3A3A;
+}
+
+.todo-input{
+    width: 100%;
+    border-radius: 15px;
+    background: #EBEBEB;
+    box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.75), 2px 2px 8px 0px #BFBFBF inset;
+}
+
+.todo-input:focus{
+    outline: none;
+}
+
+.todo-btn{
+    margin-left: 2%;
+    border-radius: 15px;
+    background: #EBEBEB;
+    box-shadow: 4px 4px 4px 0px rgba(131, 131, 131, 0.25), 8px 8px 12px 0px rgba(131, 131, 131, 0.25), -4px -4px 4px 0px rgba(255, 255, 255, 0.25), -8px -8px 12px 0px rgba(255, 255, 255, 0.25);
+    transition: all 0.3s ease;
+}
+
+.todo-btn:hover{
+    border-radius: 15px;
+    color: white;
+    background: linear-gradient(89deg, #EA0038 0%, #FFEC40 100%);
+    box-shadow: 4px 4px 8px 0px #FFF, 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset, -4px -4px 12px 0px rgba(221, 99, 55, 0.29);
+}
+
+.filters-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.filters{
+    width: 35vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filter-btn{
+    width: 100%;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.filter-btn-style{
+    font-size:0.8rem;
+    color:#888;
+    border-radius: 15px;
+    background: #EBEBEB;
+    box-shadow: 4px 4px 4px 0px rgba(131, 131, 131, 0.25), 8px 8px 12px 0px rgba(131, 131, 131, 0.25), -4px -4px 4px 0px rgba(255, 255, 255, 0.25), -8px -8px 12px 0px rgba(255, 255, 255, 0.25);
+    padding:0.2rem;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.filter-btn-style:hover{
+    color: white;
+    background: linear-gradient(89deg, #EA0038 0%, #FFEC40 100%);
+    box-shadow: 4px 4px 8px 0px #FFF, 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset, -4px -4px 12px 0px rgba(221, 99, 55, 0.29);
+}
+
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list{
+    width: 35vw;
+    list-style: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.todo-item{
+    flex: 6;
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 0.8rem;
+    color:#3A3A3A;
+    border-radius: 15px;
+    background: #EBEBEB;
+    box-shadow: 4px 4px 4px 0px rgba(131, 131, 131, 0.25), 8px 8px 12px 0px rgba(131, 131, 131, 0.25), -4px -4px 4px 0px rgba(255, 255, 255, 0.25), -8px -8px 12px 0px rgba(255, 255, 255, 0.25);
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.complete-btn{
+    flex: 0.5;
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 15px;
+    background: #EBEBEB;
+    box-shadow: 4px 4px 4px 0px rgba(131, 131, 131, 0.25), 8px 8px 12px 0px rgba(131, 131, 131, 0.25), -4px -4px 4px 0px rgba(255, 255, 255, 0.25), -8px -8px 12px 0px rgba(255, 255, 255, 0.25);
+    transition: all 0.3s ease;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.complete-btn:hover{
+    color: white;
+    background: linear-gradient(89deg, #EA0038 0%, #FFEC40 100%);
+    box-shadow: 4px 4px 8px 0px #FFF, 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset, -4px -4px 12px 0px rgba(221, 99, 55, 0.29);
+}
+
+.trash-btn{
+    flex:0.5;
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 15px;
+    background: #EBEBEB;
+    box-shadow: 4px 4px 4px 0px rgba(131, 131, 131, 0.25), 8px 8px 12px 0px rgba(131, 131, 131, 0.25), -4px -4px 4px 0px rgba(255, 255, 255, 0.25), -8px -8px 12px 0px rgba(255, 255, 255, 0.25);
+    transition: all 0.3s ease;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.trash-btn:hover{
+    color: white;
+    background: linear-gradient(89deg, #EA0038 0%, #FFEC40 100%);
+    box-shadow: 4px 4px 8px 0px #FFF, 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset, -4px -4px 12px 0px rgba(221, 99, 55, 0.29);
+}
+
+.completed li{
+    text-decoration: line-through;
+    background: #EBEBEB;
+    box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.75), 2px 2px 8px 0px #BFBFBF inset;
+}
+
+.completed .complete-btn{
+    text-decoration: line-through;
+    color: white;
+    background: linear-gradient(89deg, #EA0038 0%, #FFEC40 100%);
+    box-shadow: 4px 4px 8px 0px #FFF, 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset, -4px -4px 12px 0px rgba(221, 99, 55, 0.29);
+}
+
+.clear-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clear-btn{
+    width: 10rem;
+    font-size: 0.9rem;
+    padding: 0.8rem;
+    color: #888;
+    border: none;
+    border-radius: 15px;
+    background: #EBEBEB;
+    box-shadow: 4px 4px 4px 0px rgba(131, 131, 131, 0.25), 8px 8px 12px 0px rgba(131, 131, 131, 0.25), -4px -4px 4px 0px rgba(255, 255, 255, 0.25), -8px -8px 12px 0px rgba(255, 255, 255, 0.25);
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+}
+
+.clear-btn:hover{
+    color: white;
+    background: linear-gradient(89deg, #EA0038 0%, #FFEC40 100%);
+    box-shadow: 4px 4px 8px 0px #FFF, 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset, -4px -4px 12px 0px rgba(221, 99, 55, 0.29);
+}
