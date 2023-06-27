@@ -1,6 +1,7 @@
 # My first Github Project
 
 Todo list as first github project under my personal github!
+Join my journey! we're starting over!
 
 Published directly from visual studio code
 
